@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Publicación</h1>
+
+<div id="publicaciones">
+  <%= render @publicaciones %>
+</div>
+
+<%= link_to "Nueva publicación", new_publicacion_path %>
+
+<div data-controller="utilidades--md5">
+  <%= link_to "¡Condensa esto!", "#", "data-action": "utilidades--md5#convertir" %>
+</div>
+
+
+<div id="ap-4">
+  <ol>
+    <li v-for="hacer in porhacer">
+      {{ hacer.text }}
+    </li>
+  </ol>
+</div>
+
+<div id="ap-5">
+  <p>{{ mensaje }}</p>
+  <button v-on:click="invertirMensaje">Invertir Mensaje</button>
+</div>
+
+
+<svg width='300' height='200'></svg>
+
+<svg width='300' height='200'></svg>
+
+<div id="react">
+</div>

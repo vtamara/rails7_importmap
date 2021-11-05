@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<%= render @publicacion %>
+
+<div>
+  <%= link_to "Editar esta publicación", edit_publicacion_path(@publicacion) %> |
+  <%= link_to "Regresar al listado de publicaciones", publicaciones_path %>
+
+  <%= button_to "Eliminar esta publicación", publicacion_path(@publicacion), method: :delete %>
+</div>
